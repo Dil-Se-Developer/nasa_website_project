@@ -1,0 +1,98 @@
+/* body element css */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    /* background-color: #ffffff; */
+    font-size: 20px;
+    box-sizing: border-box;
+    font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    /* font-family: 'Titillium Web', sans-serif; */ 
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* pseudo class css */
+
+:root{
+    --original_black: #000;
+    --original_white: #fff;
+    --light_blue: #428bca;     
+    --light_grey: #333333;                     
+}
+
+
+/* navbar section css*/
+
+.navbar_section{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0px 10px;
+    background-color: var(--original_black);
+    border-bottom: 1px solid grey;
+}
+
+.navbar_logo a img{
+    max-width: 80px;
+}
+
+.nav_links_section{
+    margin-top: 15px;
+    display: flex;
+    list-style-type: none;
+}
+
+.nav_links_text{
+    color: var(--original_white);
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-left: 16px;
+}
+
+.nav_links_icon{
+    color: var(--original_white);
+    margin-left: 16px;
+}
+
+/* about section css */
+
+.about_section_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    background-color: var(--original_black);
+}
+
+.launch_pad_details {
+    background-color: var(--original_white);
+    margin: 13px;
+    padding: 13px;
+}
+
+.launch_pad_details h3{
+   line-height: 1.6rem;
+}
+
+.launch_pad_details h3 a{
+    color: var(--light_blue);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.launch_pad_details p{
+    color: var(--light_grey);
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin: 13px 0;
+}
